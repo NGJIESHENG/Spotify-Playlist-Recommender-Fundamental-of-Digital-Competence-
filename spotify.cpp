@@ -5,24 +5,24 @@ using namespace std;
 int main(){
     int choice;
     bool run = true;
-    string genre, choice2;
+    string genre, choice2, song;
 
     while(run){
-        cout<<"===================================" <<endl;
-        cout<< " Spotify Playlist Recommender v1.0" <<endl;
-        cout<<" Contributor: Ng Jie Sheng, Pan Han Cheng" <<endl;
-        cout<<"===================================" <<endl;
+        cout << "===================================" <<endl;
+        cout << " Spotify Playlist Recommender v1.0" <<endl;
+        cout << " Contributor: Ng Jie Sheng, Pan Han Cheng" <<endl;
+        cout << "===================================" <<endl;
 
-        cout<<"Choose a genre:" <<endl;
-        cout<<"1. Pop" <<endl;
-        cout<<"2. Rock" <<endl;
-        cout<<"3. Jazz" <<endl;
-        cout<<"4. Sad" <<endl;
-        cout<<"5. Workout"<<endl;
-        cout<<"6. EDM"<< endl;
-        cout<<"7. End Program"<<endl;
-        cout<<"Enter your choice (1-7): ";
-        cin>> choice;
+        cout << "Choose a genre:" <<endl;
+        cout << "1. Pop" <<endl;
+        cout << "2. Rock" <<endl;
+        cout << "3. Jazz" <<endl;
+        cout << "4. Sad" <<endl;
+        cout << "5. Workout" <<endl;
+        cout << "6. EDM" <<endl;
+        cout << "7. End Program" <<endl;
+        cout << "Enter your choice (1-7): ";
+        cin >> choice;
 
         if (choice == 7){
             run = false;
@@ -56,8 +56,14 @@ int main(){
 
         fstream playlist(genre);
 
-        cout<<"Choose another genre?(y/n)"<<endl;
-        cin>> choice2;
+        while(getline(playlist, song)){
+            cout << song <<endl;
+        }
+
+        playlist.close();
+
+        cout << "Choose another genre? (y/n)" <<endl;
+        cin >> choice2;
 
         if (choice2 == "n"){
             run = false;
