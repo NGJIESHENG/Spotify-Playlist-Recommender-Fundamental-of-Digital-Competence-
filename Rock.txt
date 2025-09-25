@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------
 Top 10 Most Popular Rock Songs
-1. Numb                                      – Linkin Park
-2. November Rain                             – Guns N' Roses
-3. In the End                                – Linkin Park
-4. Smells Like Teen Spirit - Remastered 2021 – Nirvana
-5. What's Up?                                – 4 Non Blondes
-6. Bohemian Rhapsody - Remastered 2011       – Queen
-7. Sweet Child O' Mine                       – Guns N' Roses
-8. Gabriela                                  – KATSEYE
-9. Do I Wanna Know?                          – Arctic Monkeys
-10. Zombie                                   – The Cranberries
+1. Numb                                      - Linkin Park
+2. November Rain                             - Guns N' Roses
+3. In the End                                - Linkin Park
+4. Smells Like Teen Spirit - Remastered 2021 - Nirvana
+5. What's Up?                                - 4 Non Blondes
+6. Bohemian Rhapsody - Remastered 2011       - Queen
+7. Sweet Child O' Mine                       - Guns N' Roses
+8. Gabriela                                  - KATSEYE
+9. Do I Wanna Know?                          - Arctic Monkeys
+10. Zombie                                   - The Cranberries
 --------------------------------------------------------------------------
