@@ -29,7 +29,7 @@ int main() {
             break;
         }
 
-        bool validChoice = true;  
+        bool validChoice = true;
 
         switch (choice) {
             case 1: genre = "Pop.txt"; break;
@@ -40,11 +40,12 @@ int main() {
             case 6: genre = "EDM.txt"; break;
             default:
                 cout << "Invalid choice. Please select a number from 1 to 7." << endl;
-                validChoice = false;  
+                validChoice = false;
         }
 
         if (!validChoice) {
-            continue;  
+            continue;  // back to menu
+        }
 
         fstream playlist(genre);
         if (!playlist) {
@@ -68,13 +69,13 @@ int main() {
             run = false;
         } 
         else if (choice2 == "y" || choice2 == "Y") {
-            
+            // loop continues
         } 
         else {
             cout << "Invalid input. Program will now exit." << endl;
             run = false;
         }
-    }
+    } // closes while loop
 
     return 0;
-}
+} // closes main
