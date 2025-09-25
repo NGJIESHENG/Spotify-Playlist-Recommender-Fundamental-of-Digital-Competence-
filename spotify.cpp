@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <typeinfo>
+#include <limits>
 using namespace std;
 
 int main() {
@@ -8,6 +10,9 @@ int main() {
     string genre, choice2, song;
 
     while (run) {
+
+        bool validChoice = true;
+
         cout << "===================================" << endl;
         cout << " Spotify Playlist Recommender v1.0" << endl;
         cout << " Contributor: Ng Jie Sheng, Pan Han Cheng" << endl;
@@ -22,6 +27,7 @@ int main() {
         cout << "6. EDM" << endl;
         cout << "7. End Program" << endl;
         cout << "Enter your choice (1-7): ";
+        
         cin >> choice;
 
         if (choice == 7) {
@@ -29,9 +35,14 @@ int main() {
             break;
         }
 
-        bool validChoice = true;
-
-        switch (choice) {
+        if (cin.fail()){
+            cout << "Invalid choice. Please select a number from 1 to 7." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            validChoice = false;
+        }
+        else{
+            switch (choice) {
             case 1: genre = "Pop.txt"; break;
             case 2: genre = "Rock.txt"; break;
             case 3: genre = "Jazz.txt"; break;
@@ -41,9 +52,10 @@ int main() {
             default:
                 cout << "Invalid choice. Please select a number from 1 to 7." << endl;
                 validChoice = false;
+            }
         }
 
-        if (!validChoice) {
+        if (validChoice == false) {
             continue;  // back to menu
         }
 
